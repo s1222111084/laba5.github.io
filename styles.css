@@ -1,0 +1,256 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #92b96a;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: calc(100% - 380px); /* Adjust for nav-panel width + padding */
+    margin-left: 380px; /* Adjust for nav-panel width + padding */
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.profile-photo {
+    border-radius: 50%; /* Makes the profile photo circular */
+    width: 50px; /* Size of the profile photo */
+    height: 50px; /* Size of the profile photo */
+    margin-right: 10px; /* Space between photo and text */
+}
+
+.profile-info h2 {
+    margin: 0;
+    font-size: 16px; /* Font size for name */
+}
+
+.profile-info p {
+    margin: 2px 0 0 0; /* Margin for position */
+    font-size: 12px; /* Font size for role */
+    color: #5C7373; /* Gray color for role text */
+}
+
+.social-icons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.social-icons a {
+    margin-left: 5px; /* Space between social icons */
+}
+
+.social-icons img {
+    width: 20px; /* Size of social media icons */
+    height: 20px; /* Size of social media icons */
+}
+
+.divider {
+    margin-left: 5px; /* Space before divider */
+}
+
+nav ul {
+    list-style: none; /* Removes bullet points from list */
+    padding: 0; /* Removes padding from list */
+    margin-top: 10px; /* Space above nav menu */
+}
+
+nav ul li {
+    display: inline-block; /* Displays list items in a row */
+    margin-right: 15px; /* Space between navigation items */
+}
+
+nav ul li a {
+    text-decoration: none; /* Removes underline from links */
+    color: #6c757d; /* Gray color for links */
+}
+
+nav ul li a:hover {
+    color: #007bff; /* Blue color on hover */
+}
+
+/* Navigation Panel Styling */
+.nav-panel {
+    width: 340px;
+    background-color: #2db5c4;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.panel-buttons, .section {
+    margin-bottom: 20px;
+}
+
+.panel-button, .info-button, .section-header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+}
+
+.panel-button:hover, .info-button:hover, .section-header:hover {
+    background-color: #f0f0f0;
+}
+
+.panel-button i, .info-button i, .section-header i {
+    margin-right: 10px;
+}
+
+.section-header {
+    justify-content: space-between;
+}
+
+.section-header h4 {
+    margin: 0;
+    font-size: 14px;
+    color: #777;
+    text-transform: uppercase;
+}
+
+.section-content {
+    display: block;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    margin-left: 380px; /* Adjust for nav-panel width + padding */
+    margin-top: 80px; /* Add space for the fixed header */
+    margin-bottom: 80px; /* Add space for the fixed footer */
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #22b37b;
+    color: #ecf0f1;
+    padding: 20px;
+    text-align: center;
+    
+    margin-left: 380px; /* Adjust for nav-panel width + padding */
+    
+    bottom: 0; /* Position it at the bottom */
+    z-index: 1000; /* Ensure the footer is above other content */
+}
+
+.footer-profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.footer-profile-photo {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.footer-profile-info h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.footer-profile-info p {
+    margin: 2px 0 0 0;
+    font-size: 12px;
+    color: #ecf0f1;
+}
+
+.footer-social-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.footer-social-icons a {
+    color: #ecf0f1;
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+.footer-social-icons a:hover {
+    color: #28e3a8;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Add 15px space between items */
+    margin-bottom: 20px;
+}
+
+.footer-section {
+    display: flex;
+    align-items: center; /* Align items centrally */
+    gap: 10px; /* Add 10px space between icon and text */
+}
+
+.footer-section i {
+    font-size: 24px;
+}
+
+.footer-section p {
+    margin: 0; /* Removed margin to bring elements closer */
+    font-size: 14px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #ecf0f1;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: #29c19b; /* Blue color on hover */
+    text-decoration: underline;
+}
+
+.footer-links p {
+    margin: 20px 0 0 0; /* Added 20px margin to create space between icons and contact information */
+    font-size: 14px;
+}

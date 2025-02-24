@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой сайт</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="page-container">
+        <header>
+            <div class="header-container">
+                <div class="profile">
+                    <img src="o.png" alt="Фото профиля" class="profile-photo">
+                    <div class="profile-info">
+                        <h2>Исломов Ойбек Исматилла угли</h2>
+                        <p>Студент</p>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#"><img src="im.webp" alt="Instagram"></a>
+                        <a href="#"><img src="vs.webp" alt="LinkedIn"></a>
+                        <span class="divider">|</span>
+                        <a href="#"><img src="vk.png" alt="VK"></a>
+                    </div>
+                </div>
+                <nav class="header-nav">
+                    <ul>
+                        <li><a href="index.html">Дом</a></li>
+                        <li><a href="team.html">Команда</a></li>
+                        <li><a href="particularities.html">Особенность</a></li>
+                        <li><a href="blog.html">Блог</a></li>
+                        <li><a href="contact.html">Контакт</a></li>
+                        <li><a href="sources.html">Источник</a></li>
+                        <li><a href="stores.html">Магазин</a></li>
+                        <li><a href="diseases.html">Более</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+<main>
+        <!-- Navigation Panel -->
+        <div class="nav-panel">
+            <div class="panel-buttons">
+                <button class="panel-button">
+                    <i class="fas fa-th-large"></i>
+                    <span>Панель инструментов</span>
+                </button>
+            </div>
+            <div class="section">
+                <button class="section-header" onclick="toggleSection(this)">
+                    <h4>Информация</h4>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="section-content">
+                    <button class="info-button">
+                        <i class="fas fa-user"></i>
+                        <span>Аудитория</span>
+                    </button>
+                    <button class="info-button">
+                        <i class="fas fa-plus"></i>
+                        <span>Посты</span>
+                    </button>
+                    <button class="info-button">
+                        <i class="fas fa-clock"></i>
+                        <span>Расписания</span>
+                    </button>
+                    <button class="info-button">
+                        <i class="fas fa-cog"></i>
+                        <span>Продвигать</span>
+                    </button>
+                </div>
+            </div>
+            <div class="section">
+                <button class="section-header" onclick="toggleSection(this)">
+                    <h4>Доход</h4>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="section-content" style="display: none;">
+                    <!-- Содержимое секции Доход -->
+                </div>
+            </div>
+            <div class="section">
+                <button class="section-header" onclick="toggleSection(this)">
+                    <h4>Действия</h4>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="section-content" style="display: none;">
+                    <!-- Содержимое секции Действия -->
+                </div>
+            </div>
+        </div>
+        
+            <!-- Основной контент страницы -->
+            <h2>Добро пожаловать.</h2>
+            <img src="rr.jpg" alt="вечная ">
+        
+            <!-- Add more content as needed -->
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-profile">
+                <img src="o.png" alt="Фото профиля" class="footer-profile-photo">
+                <div class="footer-profile-info">
+                    <h3>Исломов Ойбек Исматилла угли</h3>
+                    <p>Студент</p>
+                </div>
+            </div>
+            <div class="footer-social-icons">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-vk"></i></a>
+            </div>
+            <div class="footer-container">
+                <div class="footer-section">
+                    <i class="fas fa-phone-alt"></i>
+                    <p>Тел.: +7949-333-22-99-21</p>
+                </div>
+                <div class="footer-section">
+                    <i class="fas fa-envelope"></i>
+                    <p>Почта: qwertyr@gmail.com</p>
+                </div>
+                <div class="footer-section">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Адрес: Луначарского, Йошкар-Ола, Россия</p>
+                </div>
+                <div class="footer-section">
+                    <i class="fas fa-fax"></i>
+                    <p>Факс: +12-678-700</p>
+                </div>
+            </div>
+            <div class="footer-links">
+                <a href="#">Условия обслуживания</a>
+                <a href="#">Политика конфиденциальности</a>
+                <a href="#">Безопасность</a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Link to external JavaScript if needed -->
+    <script src="script.js"></script>
+</body>
+</html>
